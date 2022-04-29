@@ -29,8 +29,6 @@ def filterImg(imgpath):
     else:
         return True
 for imgpath in os.listdir("ignore/sor"):
-    if imgpath!='image-20220425193710847.png':
-        continue
     if filterImg(imgpath):
         continue
     compress(imgpath)
